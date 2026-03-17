@@ -16,7 +16,7 @@ export default function Home() {
         <title>Taimoor Ahmad - Full Stack Web Developer</title>
         <meta name="description" content="Portfolio of Taimoor Ahmad, a passionate full stack web developer building modern and scalable web applications." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/taimoor.png" />
       </Head>
 
       <Header />
