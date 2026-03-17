@@ -23,7 +23,19 @@ function getClientIP(request: NextRequest): string {
   if (forwarded) {
     return forwarded.split(',')[0].trim();
   }
-  return request.ip || 'unknown';
+
+  // Try other common headers for IP detection
+  const realIP = request.headers.get('x-real-ip');
+  if (realIP) {
+    return realIP;
+  }
+
+  const clientIP = request.headers.get('x-client-ip');
+  if (clientIP) {
+    return clientIP;
+  }
+
+  return 'unknown';
 }
 
 function isSpam(message: string): boolean {

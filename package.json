@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build:legacy": "npm install --legacy-peer-deps && next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next export"
@@ -14,8 +15,8 @@
     "@hookform/resolvers": "^5.2.2",
     "@react-email/components": "^1.0.9",
     "@react-email/render": "^2.0.4",
-    "framer-motion": "^10.12.16",
-    "lucide-react": "^0.263.0",
+    "framer-motion": "^12.37.0",
+    "lucide-react": "^0.468.0",
     "next": "^16.1.7",
     "nodemailer": "^8.0.2",
     "react": "^19.2.4",
@@ -47,6 +48,6 @@
     "react",
     "tailwindcss"
   ],
-  "author": "Mahmood Fazile",
+  "author": "Taimoor Ahmad",
   "license": "MIT"
 }
